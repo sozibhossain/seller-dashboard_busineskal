@@ -125,8 +125,14 @@ export const productAPI = {
 
 // Order API endpoints
 export const orderAPI = {
-  getOrders: (status = 'pending', page = 1, limit = 10) =>
-    apiClient.get(`/order?status=${status}&page=${page}&limit=${limit}`),
+  getOrders: (status?: string, page = 1, limit = 10) =>
+    apiClient.get('/order', {
+      params: {
+        status,
+        page,
+        limit,
+      },
+    }),
 
   getOrderDetails: (orderId: string) => apiClient.get(`/order/${orderId}`),
 

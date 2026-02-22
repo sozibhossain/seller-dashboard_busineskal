@@ -10,7 +10,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-50" style={{ backgroundColor: 'rgba(245, 243, 240, 1)' }}>
       {/* The Sidebar (Fixed position) */}
       <DashboardSidebar />
       
