@@ -18,8 +18,6 @@ pnpm-debug.log*
 *.log
 
 # Environment files (never commit secrets)
-.env
-.env.*
 .env*.local
 
 # OS / Editor
@@ -31,3 +29,4 @@ Thumbs.db
 
 # Vercel
 .vercel/
+config.bat
